@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Pribadi - Virgi</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tombol Mode Gelap -->
+  <button id="darkToggle" class="tombol">🌙 Mode Gelap</button>
+
+  <!-- BAGIAN ATAS -->
+  <header id="bagian-atas" class="fade-in">
+    <h1>Saya <span class="nama">Virgi Alpiansyah</span></h1>
+    <p>Mahasiswa Web Programming | STIKOM ELRAHMA</p>
+  </header>
+
+  <!-- NAVIGASI -->
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#biodata">Biodata</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <!-- KONTEN UTAMA -->
+  <main>
+    <!-- TENTANG -->
+    <section id="tentang" class="kotak fade-in">
+      <h2>Tentang Web Ini</h2>
+
+      <p>Ini adalah tugas latihan saya untuk memahami dasar-dasar HTML dan CSS. Saya mulai belajar bagaimana mengatur layout, memilih warna, dan menata elemen agar tampilan web terlihat rapi dan nyaman dibaca.</p>
+
+      <p>Web ini juga saya buat sebagai UTS, sekaligus sebagai tempat mencoba hal-hal baru seperti efek transisi, penataan Flexbox, dan fitur mode gelap.</p>
+
+      <a href="#kontak" class="tombol">Hubungi Saya</a>
+    </section>
+
+    <!-- BIODATA -->
+    <section id="biodata" class="kotak fade-in">
+      <h2>Biodata Singkat</h2>
+      <img src="Virgi.jpg" alt="Foto Virgi" class="foto-bio">
+      <ul>
+        <li><strong>Nama:</strong> Virgi Alpiansyah</li>
+        <li><strong>Alamat:</strong> Bogor, Jawa Barat</li>
+        <li><strong>Kampus:</strong> STIKOM ELRAHMA</li>
+        <li><strong>Program Studi:</strong> Informatika</li>
+      </ul>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian" class="kotak fade-in">
+      <h2>Keahlian</h2>
+      <p>Saya masih dalam tahap belajar membuat website.  
+         Untuk saat ini, saya baru memahami beberapa hal dasar seperti:</p>
+      <ul>
+        <li>Menulis struktur halaman dengan HTML</li>
+        <li>Mengatur tampilan dasar menggunakan CSS</li>
+        <li>Mencoba membuat layout dengan Flexbox</li>
+        <li>Belajar memilih kombinasi warna dan font</li>
+      </ul>
+      <p>Masih banyak yang perlu saya pelajari, tapi saya berusaha terus latihan supaya makin paham.</p>
+    </section>
+  </main>
+
+  <!-- KUTIPAN -->
+  <section class="kutipan fade-in">
+    <blockquote>
+      "Sesungguhnya bersama kesulitan ada kemudahan." <br>
+      — QS. Al-Insyirah: 6
+    </blockquote>
+  </section>
+
+  <!-- SOSIAL MEDIA -->
+  <section id="sosmed" class="fade-in">
+    <h2>Ikuti Saya</h2>
+    <div class="tautan-sosmed">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="kontak" class="fade-in">
+    <p>Hubungi saya di: <a href="mailto:virgi@example.com">virgi@example.com</a></p>
+    <p>© 2025 Virgi Alpiansyah | UTS CSS Dasar</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('gelap');
+      toggle.textContent = document.body.classList.contains('gelap')
+        ? '☀️ Mode Terang'
+        : '🌙 Mode Gelap';
+    });
+  </script>
+</body>
+</html>
